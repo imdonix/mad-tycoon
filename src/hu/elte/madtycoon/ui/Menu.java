@@ -2,6 +2,7 @@ package hu.elte.madtycoon.ui;
 
 import hu.elte.madtycoon.core.Engine;
 import hu.elte.madtycoon.core.Resources;
+import hu.elte.madtycoon.ui.menuitems.Credits;
 
 import javax.swing.*;
 import java.awt.*;
@@ -17,6 +18,7 @@ public class Menu extends JFrame {
     private final Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 
     private Engine engine;
+    private Credits creditsOption;
 
     public Menu() {
         this.setTitle("Mad Tycoon - Menu");
@@ -46,6 +48,9 @@ public class Menu extends JFrame {
         credits.setOpaque(false);
         credits.setContentAreaFilled(false);
         credits.setBorderPainted(false);
+        credits.addActionListener(a -> {
+            creditsOption = new Credits();
+        });
 
         exit = new JButton();
         exit.setMargin(new Insets(50, 175, 0, 0));

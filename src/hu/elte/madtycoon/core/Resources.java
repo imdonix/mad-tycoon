@@ -46,6 +46,7 @@ public class Resources
     public BufferedImage gameHappyArrowEmpty;
 
     public BufferedImage shopBackGroundImage;
+    public BufferedImage shopBackGroundImageFull;
     public BufferedImage shopCoinFlipBuyButton;
     public BufferedImage shopRoundBuyButton;
     public BufferedImage shopCastleBuyButton;
@@ -124,6 +125,7 @@ public class Resources
     private void loadShop() throws IOException
     {
         shopBackGroundImage = ImageIO.read(new File("res/menu/shop/shop_bg.png"));
+        shopBackGroundImageFull = ImageIO.read(new File("res/menu/shop/shop_bg_full_screen.png"));
 
         shopCoinFlipBuyButton = ImageIO.read(new File("res/menu/coin_flip_buy.png"));
         shopRoundBuyButton = ImageIO.read(new File("res/menu/round_buy.png"));
