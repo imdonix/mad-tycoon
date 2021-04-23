@@ -27,9 +27,9 @@ public class Credits extends JFrame {
         label1.setFont(Resources.Instance.sansPro);
 
         label2 = new JLabel("<html><br><br><br><p>Created by:<br>" +
-                "- Ladomérszky Bence (hf3lbg@inf.elte.hu)<br>" +
-                "- Magyar Tamás (rnyr2f@inf.elte.hu)<br>" +
-                "- Vogyeraczki Péter (xoflxr@inf.elte.hu)</p></html>");
+                "&emsp; - Ladomérszky Bence (hf3lbg@inf.elte.hu)<br>" +
+                "&emsp; - Magyar Tamás (rnyr2f@inf.elte.hu)<br>" +
+                "&emsp; - Vogyeraczki Péter (xoflxr@inf.elte.hu)</p></html>");
         label2.setOpaque(false);
         label2.setForeground(Color.decode("#1c1710"));
         label2.setFont(Resources.Instance.sansPro);
