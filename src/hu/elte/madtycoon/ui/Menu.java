@@ -3,6 +3,7 @@ package hu.elte.madtycoon.ui;
 import hu.elte.madtycoon.core.Engine;
 import hu.elte.madtycoon.core.Resources;
 import hu.elte.madtycoon.ui.menuitems.Credits;
+import hu.elte.madtycoon.ui.menuitems.Settings;
 
 import javax.swing.*;
 import java.awt.*;
@@ -19,6 +20,7 @@ public class Menu extends JFrame {
 
     private Engine engine;
     private Credits creditsOption;
+    private Settings settingsOption;
 
     public Menu() {
         this.setTitle("Mad Tycoon - Menu");
@@ -42,6 +44,9 @@ public class Menu extends JFrame {
         settings.setOpaque(false);
         settings.setContentAreaFilled(false);
         settings.setBorderPainted(false);
+        settings.addActionListener(a -> {
+            settingsOption = new Settings();
+        });
 
         credits = new JButton();
         credits.setMargin(new Insets(50, 50, 0, 0));

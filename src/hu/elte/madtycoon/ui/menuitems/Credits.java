@@ -24,7 +24,7 @@ public class Credits extends JFrame {
         label1.setHorizontalAlignment(JLabel.CENTER);
         label1.setVerticalAlignment(JLabel.CENTER);
         label1.setForeground(Color.decode("#1c1710"));
-        label1.setFont(Resources.Instance.sansPro);
+        label1.setFont(Resources.Instance.chBell);
 
         label2 = new JLabel(Resources.Instance.creatorCredits);
         label2.setOpaque(false);
