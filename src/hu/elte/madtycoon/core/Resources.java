@@ -1,5 +1,6 @@
 package hu.elte.madtycoon.core;
 
+
 import javax.imageio.ImageIO;
 import java.applet.Applet;
 import java.applet.AudioClip;
@@ -10,6 +11,8 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URL;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
@@ -76,8 +79,14 @@ public class Resources
 
 
     public List<String> entityNames;
+    public String creatorCredits;
 
     private Resources() {}
+
+    public static String readFile(String path, Charset encoding) throws IOException {
+        List<String> lines = Files.readAllLines(Paths.get(path), encoding);
+        return String.join(System.lineSeparator(), lines);
+    }
 
     public void load() throws IOException, FontFormatException {
         loadMenu();
@@ -120,6 +129,7 @@ public class Resources
         gameHappyArrowDown = ImageIO.read(new File("res/menu/happy_down.png"));
         gameHappyArrowEmpty = ImageIO.read(new File("res/menu/happy_empty.png"));
         entityNames = Files.readAllLines(Paths.get("res/names.txt"));
+        creatorCredits = readFile("res/credits.html", StandardCharsets.UTF_8);
     }
 
     private void loadShop() throws IOException
