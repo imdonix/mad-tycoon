@@ -2,7 +2,6 @@ package hu.elte.madtycoon.ui.menuitems;
 
 import hu.elte.madtycoon.core.Resources;
 import hu.elte.madtycoon.core.Sounds;
-import javafx.scene.layout.Border;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
