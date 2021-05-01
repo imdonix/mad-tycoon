@@ -54,7 +54,6 @@ public class Entrance extends Building
     @Override
     protected void start()
     {
-        //Coroutines needed to spawn coz we cant update the buildings list while inside the loop
         world.getCoroutines().schedule(0, () -> world.instantiate(Road.Create(world, getTargetPosition())));
     }
 

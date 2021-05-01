@@ -35,7 +35,6 @@ public class Work extends SmartGoTask<ShopAssistant, Shop>
     protected void fail()
     {
         System.out.println(String.format("%s cant reach the shop!", entity));
-        //TODO pop emote for building cant be reach
     }
 }
 

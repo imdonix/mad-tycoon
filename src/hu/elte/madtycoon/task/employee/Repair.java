@@ -29,6 +29,5 @@ public class Repair extends SmartGoTask<RepairMan, Game> {
     protected void fail()
     {
         System.out.println(String.format("%s cant reach the Game!", entity));
-        //TODO pop emote for building cant be reach
     }
 }

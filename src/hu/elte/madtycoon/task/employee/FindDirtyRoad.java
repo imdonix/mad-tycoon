@@ -29,6 +29,5 @@ public class FindDirtyRoad extends SmartGoTask<Cleaner, Road> {
     protected void fail()
     {
         System.out.println(String.format("%s cant reach the road!", entity));
-        //TODO pop emote for building cant be reach
     }
 }

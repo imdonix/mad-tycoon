@@ -29,9 +29,6 @@ public class RoadSystem
 
     public PathFindRequest pathFind(Vector2I pos, Vector2I dest)
     {
-        //if(map[pos.x][pos.y] == null) throw new IllegalStateException("The start position not valid" + pos);
-        //if(map[dest.x][dest.y] == null) throw new IllegalStateException("The end position not valid " + pos);
-
         PathFindRequest request = new PathFindRequest();
         PathFindJob job = new PathFindJob(request, map, pos, dest);
         executor.execute(job);

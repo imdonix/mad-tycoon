@@ -40,7 +40,6 @@ public class Engine extends JFrame implements IEngine
 
     public Engine()
     {
-        //HUD
         super("Mad Tycoon - Game");
         this.canvas = new GamePanel();
         this.hud = new HUD(this);
@@ -59,7 +58,6 @@ public class Engine extends JFrame implements IEngine
         add(hud,BorderLayout.EAST);
 
 
-        //Engine
         this.tickTimer = new Timer(1000/TARGET_FRAME_RATE, this::loop);
         this.world = new World();
         this.builder = new Builder(world);
@@ -69,7 +67,6 @@ public class Engine extends JFrame implements IEngine
         this.time = 0;
         this.timeScale = 1;
 
-        //Finalize
         pack();
         setVisible(true);
         hud.homeButtons();

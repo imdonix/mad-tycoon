@@ -42,7 +42,6 @@ public class Statistics
         return preview;
     }
 
-    //GETTERS
 
     public int getMoneyGain()
     {
@@ -78,7 +77,6 @@ public class Statistics
         return c;
     }
 
-    //SETTERS
 
     public void addMoneyGain(int moneyGain)
     {

@@ -79,23 +79,7 @@ public class Settings extends JFrame {
         exit.addActionListener(a -> {
             this.dispose();
         });
-
-        /*if(i % 2 == 0) {
-            soundsButton.setIcon(new ImageIcon(Resources.Instance.openButton));
-            Sounds.setAudio(false);
-        } else {
-            soundsButton.setIcon(new ImageIcon(Resources.Instance.closeButton));
-            Sounds.setAudio(true);
-        }
-
-        if (j % 2 == 0) {
-            musicButton.setIcon(new ImageIcon(Resources.Instance.openButton));
-            Sounds.setMusic(false);
-        } else {
-            musicButton.setIcon(new ImageIcon(Resources.Instance.closeButton));
-            Sounds.setMusic(true);
-        }*/
-
+        
         soundsButton.setIcon(new ImageIcon(Resources.Instance.openButton));
         musicButton.setIcon(new ImageIcon(Resources.Instance.openButton));
         exit.setIcon(new ImageIcon(Resources.Instance.gameExitButton));
