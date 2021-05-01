@@ -2,6 +2,7 @@ package hu.elte.madtycoon.ui;
 
 import hu.elte.madtycoon.core.Engine;
 import hu.elte.madtycoon.core.Resources;
+import hu.elte.madtycoon.core.Sounds;
 import hu.elte.madtycoon.ui.menuitems.Credits;
 import hu.elte.madtycoon.ui.menuitems.Settings;
 
@@ -86,5 +87,7 @@ public class Menu extends JFrame {
         this.pack();
         this.setVisible(true);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        Sounds.loop(Resources.Instance.music);
+        Sounds.setMusic(true);
     }
 }
