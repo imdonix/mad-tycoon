@@ -51,7 +51,6 @@ public class World
     private void start()
     {
         entrance = (Entrance) instantiate(Entrance.Create(this));
-        Sounds.loop(Resources.Instance.music);
     }
 
     public void update(float dt)
