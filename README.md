@@ -1,25 +1,14 @@
 # Mad Tycoon
 A real time simulation tycoon game.
 
+[![gameplay](https://img.youtube.com/vi/Qn-w_SbsGDc/0.jpg)](https://www.youtube.com/watch?v=Qn-w_SbsGDc)
+
 ## Build tool
 
-To run the project you need: `jdk8` `ant`
+To run the project you need: `jdk8` and `ant` then:
 
 ```bash
 ant run
 ```
 
-To create a jar file with resources:
-
-```bash
-ant jar
-```
-
-To create a zip of the build:
-```bash
-ant zip
-```
-
-## IntelliJ IDEA
-
-You can find the `ant` tool in `View -> Tool Windows -> Ant`
+## See more at the wiki [HERE](https://github.com/imdonix/mad-tycoon/wiki)
